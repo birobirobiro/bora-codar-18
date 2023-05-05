@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  background: linear-gradient(102.32deg, #030422 -2.74%, #090114 101.6%);
+  width: 100%;
+  height: 100vh;
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+  margin-top: 60px;
+  gap: 16px;
+}
+
+.container {
+  position: relative;
+  gap: 32px;
+}
+
+.card-front {
+  background-image: url("./assets/card-front/bg.jpg");
+  object-fit: cover;
+  width: 438px;
+  height: 608px;
+  border-radius: 20px;
+  box-shadow: 0px 294px 118px rgba(0, 0, 0, 0.03), 0px 165px 99px rgba(0, 0, 0, 0.1), 0px 73px 73px rgba(0, 0, 0, 0.17), 0px 18px 40px rgba(0, 0, 0, 0.2), 0px 0px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.card-info {
+  padding: 48px 133px 60px 40px;
+}
+
+.card-info header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 300px;
+}
+
+.card-info h2 {
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+}
+
+.card-info span {
+  line-height: 18px;
+  color: #D8CEDE;
+}
+
+.character img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+}
+
+.card-back {
+  object-fit: cover;
+  width: 348px;
+  height: 486px;
+  border-radius: 20px;
+  box-shadow: 0px 294px 118px rgba(0, 0, 0, 0.03), 0px 165px 99px rgba(0, 0, 0, 0.1), 0px 73px 73px rgba(0, 0, 0, 0.17), 0px 18px 40px rgba(0, 0, 0, 0.2), 0px 0px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.card-back:first-child {
+  background-image: url("./assets/card-back/bg-card-left.jpg");
+  font-size: 32px;
+
+}
+
+.card-back:last-child {
+  background-image: url("./assets/card-back/bg-card-right.jpg");
+  font-size: 32px;
+}
+
+
+.card-back h1 {
+  -webkit-text-stroke: 1px #312D74;
+  -webkit-text-fill-color: transparent;
+}
